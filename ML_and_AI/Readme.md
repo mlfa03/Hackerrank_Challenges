@@ -2,7 +2,7 @@
 
 ### Statistics 
 * [Basic Statistics warmup](https://github.com/mlfa03/Hackerrank_Challenges/tree/main/ML_and_AI)
-* [Day 1 - Correlation and Regression Lines]()
+* [Day 1 - Correlation and Regression Lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day1_corr_reg_lines.py)
 * [Day 2 - Correlation and Regression Lines]()
 * [Day 3 - Correlation and Regression Lines]()
 * [Day 4 - Correlation and Regression Lines]()
