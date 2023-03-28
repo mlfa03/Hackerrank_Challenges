@@ -17,3 +17,4 @@
 ### Regression
 * [Laptop Battery Life](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/laptop_battery_life.py)
 * [Polynomial Regression](https://github.com/mlfa03/Hackerrank_Challenges/tree/main/ML_and_AI)
+* [Missing Stock Prices](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/missing_stock_prices.py)
