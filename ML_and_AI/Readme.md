@@ -10,6 +10,10 @@
 * [Day 6 - Multiple regression lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day6_mult_reg_lines.py)
 
 
+### NLP Classification
+* [Stack Exchange Classifier](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/stack_exchange_class.py)
+
+
 ### Regression
 * [Laptop Battery Life](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/laptop_battery_life.py)
 * [Polynomial Regression](https://github.com/mlfa03/Hackerrank_Challenges/tree/main/ML_and_AI)
