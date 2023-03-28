@@ -12,4 +12,4 @@
 
 ### Regression
 * [Laptop Battery Life](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/laptop_battery_life.py)
-* [Polynomial Regression]()
+* [Polynomial Regression](https://github.com/mlfa03/Hackerrank_Challenges/tree/main/ML_and_AI)
