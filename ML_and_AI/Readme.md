@@ -5,8 +5,8 @@
 * [Day 1 - Correlation and Regression Lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day1_corr_reg_lines.py)
 * [Day 2 - Correlation and Regression Lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day2_corr_reg_lines.py)
 * [Day 3 - Correlation and Regression Lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day3_corr_reg_lines.py)
-* [Day 4 - Correlation and Regression Lines]()
-* [Day 5 - Correlation and Regression Lines](https://iaexpert.academy/topic/projeto-5-classificacao-de-texto-e-analise-de-sentimentos/)
+* [Day 4 - Correlation and Regression Lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day4_corr_reg_lines.py)
+* [Day 5 - Correlation and Regression Lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day5_corr_reg_lines.py)
 * [Day 6 - Multiple regression lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day6_mult_reg_lines.py)
 
 
