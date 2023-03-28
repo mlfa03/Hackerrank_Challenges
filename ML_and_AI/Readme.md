@@ -24,4 +24,7 @@
 * [Missing Stock Prices](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/missing_stock_prices.py)]
 * [Temperature Predictions (gradient boost)](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/temperature_predictions.py)
 
+### Time Series Regression
+* [Predicting Web Traffic (arima)](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/predicting_web_traffic.py)
+
 ### Image Processing
