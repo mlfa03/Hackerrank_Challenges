@@ -8,6 +8,7 @@
 * [Day 4 - Correlation and Regression Lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day4_corr_reg_lines.py)
 * [Day 5 - Correlation and Regression Lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day5_corr_reg_lines.py)
 * [Day 6 - Multiple regression lines](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/day6_mult_reg_lines.py)
+* [Best Aptitude Test](https://github.com/mlfa03/Hackerrank_Challenges/tree/main/ML_and_AI)
 
 
 ### Classification
