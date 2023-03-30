@@ -14,6 +14,7 @@
 
 ### Classification
 * [Predicting Missing Grades](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/predict_missing_grades.py)
+* [Dota 2 Game Prediction (decision tree)](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/dota2_game.py)
 
 
 ### NLP Classification
