@@ -14,20 +14,22 @@ train = ["I'd like an apple.", "An apple a day keeps the doctor away.",
 words = []
 for i in range(len(train)):
     for word in train[i].split():
-        word = word.lower().strip('.') #removing the dot in the sentences 
+        word = word.lower().strip('.')        #removing the dot in the sentences 
         doc_words_count[word + str(i)] += 1
 
 for text in train:
     text = text.strip('.')
-    for word in text.split():
+    for word in text.split():                #this splits each sentence in train list into a list of words
         if word not in words:
-            words.append(word.lower())
+            words.append(word.lower())       #list of words from the train list, each word is an element in the list
 
+#Running the counter
+#Words is a list of unique words in the train
 for word in words:
     for text in train:
-        text = text.lower()
+        text = text.lower()                        #everything in lowercase
         if word in text:
-            doc_count_containing_words[word] += 1
+            doc_count_containing_words[word] += 1. #dictionary with count of words
 
 sample = train[0].strip('.').split()
 
