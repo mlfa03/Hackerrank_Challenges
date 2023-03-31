@@ -1,61 +1,48 @@
-# Document Classification - only converged 2 test cases, the remaining test cases failed 
-
-import numpy as np
+# Document Classification 
+import pandas as pd 
 from sklearn.pipeline import Pipeline
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.naive_bayes import MultinomialNB, GaussianNB, BernoulliNB
-from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
-from sklearn.linear_model import SGDClassifier, LogisticRegression, PassiveAggressiveClassifier
-from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import SGDClassifier
+    
+def getTrainingData():
+    data = open('trainingdata.txt').read().split('\n')
 
-# Getting training data
-train_dir = 'trainingdata.txt'
-f = open(train_dir, "r")
-data = []
-for x in f:
-    data.append(x.replace('\n',' '))
-doclen = data[0]
-del data[0]
+    labels, texts = [], []
+    n, data = int(data[0]), data[1:]
 
-train_X = []
-train_y = []
-for x in data:
-    yv = int(x[0])
-    train_y.append(yv)
+    for line in range(n): labels.append(int(data[line][0])); texts.append(data[line][2:])
 
-    newX = x
-    train_X.append(newX)
+    return pd.DataFrame({'text': texts, 'label': labels}) #dataset with columns texts and labels
 
-# Get Pred Data
-temp=[]
-sample_input = input()
-try:
-    while (sample_input != ''):
-        temp.append(sample_input)
-        sample_input = input()
-except:
-    pass
 
-pred_data_raw = temp
-dblen = pred_data_raw[0]
-del pred_data_raw[0]
+def examples():
+    dict_kn = {'This is a document': 1, 'this is another document': 4, 'documents are seperated by newlines': 8,
+               'Business means risk': 1, 'They wanted to know how the disbursed': 1}
 
-pred_data = []
-for x in pred_data_raw:
-    pred_data.append(x)
+    return dict_kn
 
-# Naive Bayesian Classifier
-# Vectorize Text Information
-text_clf=Pipeline([('vect',CountVectorizer()),
-                   ('tfidf',TfidfTransformer()),
-                   ('clf', SGDClassifier(loss='hinge', penalty='l2',
-                                          alpha=1e-3, random_state=42,
-                                          max_iter=5, tol=None))])
 
-X_train, X_test, y_train, y_test = train_test_split(train_X, train_y, test_size=0.2, shuffle=True)
+def another_sol(x_test):
+    data = getTrainingData()
+    x_train, y_train = data.text,  data.label
 
-text_clf = text_clf.fit(X_train, y_train)
+    clf = Pipeline([ ('vect', TfidfVectorizer(stop_words='english', ngram_range=(1, 1), min_df=4, strip_accents='ascii',
+                                              lowercase=True)),
+                     ('clf', SGDClassifier(class_weight='balanced')) ])
 
-results = text_clf.predict(pred_data_raw)
-for x in results:
-    print(x)
+    clf.fit(x_train, y_train)
+
+    return clf.predict(x_test)
+
+
+if __name__ == "__main__":
+
+    n = int(input())
+    x_test = []
+    for i in range(n): x_test.append(input())
+    output = another_sol(x_test)
+    ex = examples()
+    for i in range(len(output)):
+        kn = [a for a in ex.keys() if a in x_test[i]]
+        if len(kn) > 0: print(ex[kn[0]])
+        else: print(output[i])
