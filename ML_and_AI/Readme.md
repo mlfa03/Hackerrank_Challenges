@@ -20,6 +20,7 @@
 ### NLP Classification
 * [Stack Exchange Classifier](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/stack_exchange_class.py)
 * [Matching Questions and Their Answers](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/matching_questions_and_answers.py)
+* [Compute cross entropy](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/compute_cross_entropy.py)
 
 
 ### Regression
