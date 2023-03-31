@@ -32,3 +32,4 @@
 * [Predicting Web Traffic (arima)](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/predicting_web_traffic.py)
 
 ### Image Processing
+[Count the pair of tracks](https://github.com/mlfa03/Hackerrank_Challenges/blob/main/ML_and_AI/count_pair_of_tracks.py)
